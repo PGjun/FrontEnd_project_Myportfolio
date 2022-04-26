@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<style>
+            body{
+                background-image: url("img/loginbkgimg.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                overflow: hidden;
+            }
+            #cent{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+            }
+            .jb-a{
+                position: relative;
+                margin: 169px;
+            }
+            .jb-c{
+                position: absolute;
+                top: -60px;
+                left: -20px;
+                opacity: 0;
+                transition: opacity 0.2s linear;
+            }
+            .jb-b{
+                transition: opacity 0.1s linear;
+            }
+            .jb-a:hover .jb-c{
+                opacity: 1;
+            }
+            .jb-a:hover .jb-b{
+                opacity: 0;
+            }
+           
+		</style>
+	</head>
+	<body>
+		<div class="btn" id="cent">
+           <div class="jb-a">
+               <a href="mainpage.html">
+                    <img src="img/charac2.png" style="width: 330px; height: 400px;" class="jb-b">
+                    <img src="img/charac.png" style="width: 500px; height: 500px;" class="jb-c">
+               </a>
+            </div>
+        </div>
+	</body>
+</html>
